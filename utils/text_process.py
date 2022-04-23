@@ -8,6 +8,7 @@
 # Copyrights (C) 2018. All Rights Reserved.
 
 import nltk
+nltk.download('punkt')
 import numpy as np
 import os
 import torch
