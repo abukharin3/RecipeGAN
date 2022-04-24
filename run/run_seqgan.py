@@ -38,7 +38,7 @@ CUDA = int(True)
 oracle_pretrain = int(True)
 gen_pretrain = int(False)
 dis_pretrain = int(False)
-MLE_train_epoch = 30
+MLE_train_epoch = 100
 ADV_train_epoch = 10
 tips = 'SeqGAN experiments'
 
@@ -57,7 +57,7 @@ batch_size = 64
 max_seq_len = 20
 gen_lr = 0.01
 dis_lr = 1e-4
-pre_log_step = 10
+pre_log_step = 1
 adv_log_step = 1
 
 # ===Generator===
