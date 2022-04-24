@@ -57,7 +57,7 @@ batch_size = 64
 max_seq_len = 20
 gen_lr = 0.01
 dis_lr = 1e-4
-pre_log_step = 1
+pre_log_step = 10
 adv_log_step = 1
 
 # ===Generator===
@@ -67,10 +67,10 @@ gen_embed_dim = 32
 gen_hidden_dim = 32
 
 # ===Discriminator===
-d_step = 3
-d_epoch = 3
-ADV_d_step = 2
-ADV_d_epoch = 2
+d_step = 1
+d_epoch = 1
+ADV_d_step = 1
+ADV_d_epoch = 1
 dis_embed_dim = 64
 dis_hidden_dim = 64
 
