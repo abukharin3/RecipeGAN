@@ -62,7 +62,7 @@ adv_log_step = 1
 
 # ===Generator===
 ADV_g_step = 1
-rollout_num = 16
+rollout_num = 1
 gen_embed_dim = 32
 gen_hidden_dim = 32
 
