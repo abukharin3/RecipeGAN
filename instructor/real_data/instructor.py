@@ -37,6 +37,8 @@ class BasicInstructor:
         self.word2idx_dict, self.idx2word_dict = load_dict(cfg.dataset)
 
         # Dataloader
+        self.train_data = GenDataIter(cfg.train_data)
+        self.test_data = GenDataIter(cfg.test_data, if_test_data=True)
         try:
             self.train_data = GenDataIter(cfg.train_data)
             self.test_data = GenDataIter(cfg.test_data, if_test_data=True)
