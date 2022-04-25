@@ -149,7 +149,7 @@ def tokens_to_tensor(tokens, dictionary):
             sent_ten.append(cfg.padding_idx)
             i += 1
         tensor.append(sent_ten[:cfg.max_seq_len])
-        print(sent_ten.shape)
+        print(len(sent_ten))
     return torch.LongTensor(tensor)
 
 
