@@ -52,7 +52,7 @@ data_shuffle = int(False)
 model_type = 'vanilla'
 gen_init = 'normal'
 dis_init = 'uniform'
-samples_num = 5000
+samples_num = 1000
 batch_size = 64
 max_seq_len = 20
 gen_lr = 0.01
@@ -61,16 +61,16 @@ pre_log_step = 10
 adv_log_step = 1
 
 # ===Generator===
-ADV_g_step = 1
-rollout_num = 1
+ADV_g_step = 3
+rollout_num = 3
 gen_embed_dim = 32
 gen_hidden_dim = 32
 
 # ===Discriminator===
-d_step = 1
-d_epoch = 1
-ADV_d_step = 1
-ADV_d_epoch = 1
+d_step = 3
+d_epoch = 3
+ADV_d_step = 2
+ADV_d_epoch = 2
 dis_embed_dim = 64
 dis_hidden_dim = 64
 
