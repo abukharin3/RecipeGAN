@@ -27,7 +27,7 @@ else:
     print('Missing argument: job_id and gpu_id. Use default job_id: {}, gpu_id: {}'.format(job_id, gpu_id))
 
 # Executables
-executable = '/home/zhiwei/.virtualenvs/zhiwei/bin/python'  # specify your own python interpreter path here
+executable = 'python'  # specify your own python interpreter path here
 rootdir = '../'
 scriptname = 'main.py'
 
@@ -38,8 +38,8 @@ CUDA = int(True)
 oracle_pretrain = int(True)
 gen_pretrain = int(False)
 dis_pretrain = int(False)
-MLE_train_epoch = 0
-ADV_train_epoch = 200
+MLE_train_epoch = 80
+ADV_train_epoch = 100
 tips = 'DGSAN experiments'
 
 # ===Oracle  or Real===

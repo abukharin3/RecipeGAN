@@ -38,8 +38,8 @@ CUDA = int(True)
 oracle_pretrain = int(True)
 gen_pretrain = int(False)
 dis_pretrain = int(False)
-MLE_train_epoch = 120
-ADV_train_epoch = 200
+MLE_train_epoch = 80
+ADV_train_epoch = 100
 tips = 'DPGAN experiments'
 
 # ===Oracle  or Real===
@@ -61,15 +61,15 @@ pre_log_step = 10
 adv_log_step = 1
 
 # ===Generator===
-ADV_g_step = 1
-rollout_num = 16
+ADV_g_step = 3
+rollout_num = 3
 gen_embed_dim = 32
 gen_hidden_dim = 32
 
 # ===Discriminator===
-d_step = 5
+d_step = 3
 d_epoch = 3
-ADV_d_step = 4
+ADV_d_step = 2
 ADV_d_epoch = 2
 dis_embed_dim = 64
 dis_hidden_dim = 64
